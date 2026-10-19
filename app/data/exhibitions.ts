@@ -1,6 +1,6 @@
 export type Exhibition = {
   id: string; img: number | null; place: string; artist: string; title: string;
-  originalTitle: string; date: string; body: string; status: string; price: string;
+  originalTitle: string; date: string; body: string; status: string;
   genre: string; headline: string; overview: string[]; background: string;
   highlights: { title: string; text: string }[];
   looking: string[]; question: string; visit: { label: string; value: string }[];
@@ -14,7 +14,7 @@ export const exhibitions: Exhibition[] = [
     id: 'carsten-holler', img: 3, place: 'UCCA · 798 예술구', artist: 'Carsten Höller',
     title: 'Two · 双', originalTitle: '卡斯滕·霍勒：双', date: '2026.07.14 — 2027.01.31',
     body: '두 개의 입구, 컬러와 흑백의 평행한 세계. 관객의 선택과 움직임이 작품의 일부가 됩니다.',
-    status: '1일차 방문 예정', price: '문서 기준 120위안 · 공식 판매가 확인 필요',
+    status: '1일차 방문 예정',
     genre: '참여형 설치 · 지각 · 놀이', headline: '우리가 본 세계는, 정말 같은 세계일까요?',
     overview: [
       '카스텐 홀러의 중국 첫 기관 개인전입니다. 입장할 때 무작위로 배정되는 두 입구는 각각 컬러와 흑백의 공간으로 이어집니다. 같은 구조와 닮은 작품을 마주해도, 빛과 색에 따라 경험이 달라집니다.',
@@ -36,10 +36,10 @@ export const exhibitions: Exhibition[] = [
     visit: [
       { label: '장소', value: 'UCCA 베이징 대전시장 · 北京市朝阳区酒仙桥路4号798艺术区' },
       { label: '운영', value: '화–일 10:00–19:00 · 마지막 입장 18:30 · 특별 운영일은 공식 안내 확인' },
-      { label: '일정 연결', value: '10/29 오후 798 예술구 방문 시 관람 예정. 문서의 16:15–18:30은 예술구와 UCCA를 합친 시간입니다.' },
+      { label: '일정 연결', value: '10/29 16:15–18:30 · 798 예술구 산책과 UCCA 관람' },
       { label: '예매', value: '공식 UCCA 위챗 또는 현장. 단체 관람·해설은 별도 사전 협의가 필요합니다.' },
     ],
-    verification: '전시 기간·장소·출품작은 UCCA 공식 자료로 확인했습니다. 120위안은 여행 문서의 참고 금액이며 단체 적용 요금과 포함 여부는 확정되지 않았습니다.',
+    verification: '전시 기간·장소·출품작은 UCCA 공식 안내를 참고했습니다. 단체 관람 요금과 티켓 포함 여부는 출발 전 안내를 확인해 주세요.',
     sources: [
       { label: 'UCCA · 전시 소개와 작가 약력', url: 'https://ucca.org.cn/en/exhibition/carsten-holler/' },
       { label: 'UCCA · 공식 오디오 가이드', url: 'https://www.ucca.org.cn/en/exhibition/carsten-holler/audios/' },
@@ -51,7 +51,7 @@ export const exhibitions: Exhibition[] = [
     id: 'nikolai-fechin', img: 4, place: '중국미술관 · 3·5·7 전시실', artist: 'Nikolai Fechin',
     title: '니콜라이 페친 회화 명작전', originalTitle: '致敬巨匠：尼古拉·费欣绘画精品展',
     date: '2026.09.29 — 2027.02.14', body: '75점으로 따라가는 화가의 여정. 정교한 얼굴과 자유로운 붓질이 공존하는 회화를 만납니다.',
-    status: '3일차 문서 제안', price: '문서 기준 120위안 · 공식 예매 공지 확인',
+    status: '3일차 방문 예정',
     genre: '유화 · 드로잉 · 초상', headline: '가까이에서는 붓질, 한 걸음 뒤에서는 사람.',
     overview: [
       '중국미술관과 러시아의 세 미술 기관이 공동 주최하는 전시입니다. 베이징시 전시 안내는 75점의 작품을 소개하며, 공식 출품 목록에는 초기 대형 회화부터 초상화와 드로잉까지 실려 있습니다.',
@@ -73,22 +73,22 @@ export const exhibitions: Exhibition[] = [
     visit: [
       { label: '장소', value: '중국미술관 1층 3·5·7 전시실 · 北京市东城区五四大街1号' },
       { label: '운영', value: '09:00–17:00 · 16:00 입장 마감 · 월요일 휴관, 법정 공휴일 예외' },
-      { label: '일정 연결', value: '10/31 14:00–15:30 문서 제안 일정. 동징원 일몰 세션과 이동 시간을 함께 조율해야 합니다.' },
+      { label: '일정 연결', value: '10/31 14:00–15:30 · 중국미술관 관람 후 동징원으로 이동합니다.' },
       { label: '예매', value: '미술관 공식 공지의 전시 예매 안내를 확인하세요. 일반 전시 입장과 유료 특별전의 예약 조건을 구분해야 합니다.' },
     ],
-    verification: '전시 기간·전시실·출품작은 중국미술관, 75점이라는 규모는 베이징시 자료로 확인했습니다. 시 전시 목록의 요금은 ‘미정’이며, 미술관에는 별도의 9/21 예매 공지가 있습니다. 해당 위챗 공지 본문을 열지 못해 120위안을 공식 확인 금액으로 표시하지 않았습니다.',
+    verification: '전시 기간·전시실·출품작은 중국미술관, 전시 규모는 베이징시 안내를 참고했습니다. 요금과 예약 조건은 미술관 공식 예매 공지를 확인해 주세요.',
     sources: [
       { label: '중국미술관 · 공식 전시 및 출품작', url: 'https://www.namoc.cn/namoc/zhanlan/202609/6e6235543e8c4a368445608fabdb3bea.shtml' },
       { label: '중국미술관 · 페친 회화의 표현성', url: 'https://www.namoc.cn/namoc/xinwen/202609/341cd0ba04b1441a8413c854ca5ffcc8.shtml' },
       { label: '베이징시 · 전시 규모와 장소', url: 'https://www.beijing.gov.cn/fwcj/calendar/bwgzl/6a978ff588f81c019f7039ed.html' },
-      { label: '중국미술관 · 예매 공지 목록', url: 'https://www.namoc.cn/namoc/gonggao/list.shtml', note: '9/21 공지 연결. 위챗 본문은 이번 조사에서 접근 불가' },
+      { label: '중국미술관 · 예매 공지 목록', url: 'https://www.namoc.cn/namoc/gonggao/list.shtml', note: '9/21 특별전 예매 공지' },
     ],
   },
   {
     id: 'the-monsters', img: 5, place: '제네시스 갤러리 · 启皓艺术馆', artist: 'Kasing Lung',
     title: 'MONSTERS BY MONSTERS', originalTitle: 'MONSTERS BY MONSTERS: NOW AND THEN · 精灵天团：此刻与未来',
     date: '2026.09.30 — 2026.11.29', body: '장난감이 되기 전의 라부부를 만나는 시간. 원화와 스케치에서 출발해 상상의 숲으로 들어갑니다.',
-    status: '4일차 문서 제안', price: '문서 기준 79위안 · 예매 조건 확인 필요',
+    status: '4일차 방문 예정',
     genre: '원화 · 창작 아카이브 · 몰입형 전시', headline: '인기 캐릭터의 표정 뒤에는, 작가의 선이 있습니다.',
     overview: [
       'THE MONSTERS 10주년 순회전의 베이징 전시입니다. 베이징시가 게재한 현장 기사에서는 약 3,000㎡ 공간, 10개 테마 구역, 100점 넘는 카싱 룽의 원화와 창작 손그림을 소개합니다.',
@@ -104,16 +104,16 @@ export const exhibitions: Exhibition[] = [
     looking: [
       '처음 보는 캐릭터도 이름을 외우기보다 표정·귀·이빨·몸의 비례부터 비교해 보세요.',
       '그림과 피규어를 함께 보며 선, 색, 재질이 각각 어떤 성격을 만드는지 관찰해 보세요.',
-      '사진 촬영과 상품 구매 시간은 원화 관람과 별도로 생각해 두세요. 귀국일 제안 일정이므로 실제 관람 시간은 최종 동선에 따라 달라집니다.',
+      '사진 촬영과 상품 구매 시간은 원화 관람과 별도로 생각해 두세요. 귀국일 관람이므로 다음 이동 시간을 함께 확인해 주세요.',
     ],
     question: '나에게 라부부는 수집하는 물건인가요, 하나의 이야기를 가진 등장인물인가요?',
     visit: [
       { label: '장소', value: '제네시스 아트 갤러리 / 启皓艺术馆 · 北京市朝阳区新源南路8号' },
-      { label: '문서의 운영 정보', value: '09/30–11/29 · 10:00–20:00. 날짜·시간·79위안은 문서 기준이며 공식 예약 페이지 재확인이 필요합니다.' },
-      { label: '일정 연결', value: '11/01 11:20–12:20 문서 제안. 귀국편은 18:50이므로 공항 이동·수속 시간을 우선 확보합니다.' },
+      { label: '관람 안내', value: '09/30–11/29 · 10:00–20:00 · 실제 운영 및 입장 조건은 예매 시 확인해 주세요.' },
+      { label: '일정 연결', value: '11/01 11:20–12:20 · 제네시스 갤러리 관람 후 점심 식사와 랑위안 스테이션 방문으로 이어집니다.' },
       { label: '예매', value: '주최 측 또는 전시장 공식 채널에서 방문일, 회차, 티켓 유형과 외국인 신분증 사용 조건을 확인하세요.' },
     ],
-    verification: '전시 개최와 전시 구성은 베이징시의 10/5 현장 기사로 확인했습니다. 베이징 전시 공식 예매 페이지는 확보하지 못했으므로 종료일·운영 시간·요금은 문서 기준으로 남겼습니다.',
+    verification: '전시 구성은 베이징시가 소개한 현장 기사를 참고했습니다. 운영 시간과 요금, 입장 조건은 방문 전 공식 예매 안내를 확인해 주세요.',
     sources: [
       { label: '베이징시 · THE MONSTERS 베이징 전시 현장 기사', url: 'https://www.beijing.gov.cn/fuwu/bmfw/sy/jrts/202610/t20261005_4890678.html', note: '베이징일보 10/5 현장 취재를 시 포털에서 게재' },
     ],
@@ -122,7 +122,7 @@ export const exhibitions: Exhibition[] = [
     id: 'prayers-to-fornax', img: 6, place: '현대 모터스튜디오 베이징', artist: 'Prayers to Fornax',
     title: '과학, 기술 그리고 영성', originalTitle: 'Prayers to Fornax: Science, Technology, and Spirituality · 天炉座的祈祷者：科学、技术与灵性',
     date: '2026.07.18 — 2026.12.13', body: '별을 관측하는 과학, 하늘을 해석하는 믿음. 여덟 팀의 작품이 기술을 바라보는 또 다른 길을 엽니다.',
-    status: '1일차 선택 추천', price: '입장료 확인 필요',
+    status: '1일차 선택 추천',
     genre: '영상 · 설치 · 과학과 영성', headline: '측정할 수 없는 세계를, 우리는 어떻게 이해할까요?',
     overview: [
       '현대 블루 프라이즈+ 2025 수상 큐레이터팀 Yifeng Wei와 Penny Dan Xu가 기획한 전시입니다. 국제 작가·콜렉티브 8개 팀이 참여해 과학적 탐구, 기술 체계, 영적 상상력이 만나는 지점을 다룹니다.',
@@ -157,7 +157,7 @@ export const exhibitions: Exhibition[] = [
     id: 'gathered-sky', img: null, place: '동징원 · 东景缘 / The Temple', artist: 'James Turrell',
     title: 'Gathered Sky', originalTitle: 'Gathered Sky · Skyspace', date: '상설 설치 · 일몰 세션은 예약 확인 필요',
     body: '지붕에 열린 하늘과 실내의 빛. 해가 저무는 동안, 색을 본다는 경험 자체에 머뭅니다.',
-    status: '3일차 방문 예정 · 예약 확인', price: '문서 기준 150위안 · 현재 요금 확인 필요',
+    status: '3일차 방문 예정 · 예약 확인',
     genre: '상설 설치 · 빛 · 지각', headline: '그림이 걸린 벽 대신, 하늘이 열리는 방.',
     overview: [
       '동징원에 있는 제임스 터렐의 상설 스카이스페이스입니다. 천장의 개구부로 보이는 실제 하늘과 실내 조명이 함께 지각되는 공간으로, 일반적인 기간제 기획전과는 관람 방식이 다릅니다.',
@@ -170,16 +170,15 @@ export const exhibitions: Exhibition[] = [
       { title: '작품의 일부가 되는 시간', text: '다른 관람자의 움직임에서 잠시 시선을 거두고, 시야가 적응하는 과정을 관찰해 보세요. 아래 설명은 작품에 접근하기 위한 사이트의 감상 제안입니다.' },
     ],
     looking: [
-      '문서에는 일몰 20분 전 도착, 17:15–18:15 세션이 적혀 있습니다. 확정 운영 시간으로 간주하지 말고 예약처에서 해당 날짜의 시작 시간을 확인하세요.',
+      '16:55 도착 후 17:15–18:15 일몰 세션을 관람할 예정입니다. 당일 일몰에 따라 시작 시간이 달라질 수 있으므로 예약 안내를 확인해 주세요.',
       '2014년 주최 측 안내는 15분 전 도착, 따뜻한 옷 준비, 우천·강설 시 취소 가능성을 명시했습니다. 현재 조건은 새로 확인해야 합니다.',
       '회차·정원·요금·촬영 규칙을 예약처에 확인하고, 일몰 관람이 앞선 중국미술관 방문 및 저녁 식사와 겹치지 않도록 조율하세요.',
     ],
     question: '하늘은 그대로인데 내가 보는 색이 달라진다면, 그 색은 어디에 있는 걸까요?',
     visit: [
-      { label: '장소', value: '东景缘 · 北京市东城区沙滩北街嵩祝院23号 (주소는 여행 문서 기준)' },
-      { label: '일정 연결', value: '10/31 경산공원·중국미술관 일대 방문 후 일몰 관람 제안. 세션 예약 및 이동 시간을 우선 확인하세요.' },
-      { label: '운영·예약', value: '상설 작품의 존재와 실제 입장 가능한 회차는 별개입니다. 2026년 운영 요일·시간·예약 가능 여부는 확인되지 않았습니다.' },
-      { label: '요금', value: '문서 150위안은 참고 금액. 동일 금액의 과거 주최 측 공지가 있지만 현재 가격을 보장하지 않습니다.' },
+      { label: '장소', value: '东景缘 · 北京市东城区沙滩北街嵩祝院23号' },
+      { label: '일정 연결', value: '10/31 중국미술관 관람 후 동징원으로 이동 · 16:55 도착, 17:15–18:15 일몰 관람 예정' },
+      { label: '운영·예약', value: '일몰 세션은 사전 예약이 필요합니다. 방문일의 회차·시작 시간·정원은 예약처에 확인해 주세요.' },
     ],
     verification: '작품과 작가의 배경은 ARoS 미술관 자료, 과거 관람 방식은 The Temple의 2014년 주최 행사 안내를 참고했습니다. 과거 요일·회차를 2026년 운영 정보로 옮기지 않았습니다.',
     sources: [
