@@ -24,7 +24,9 @@ export function ArrivalGuide() {
         <div><dt>입국 예정일 / 출국 예정일</dt><dd>2026-10-29 / 2026-11-01</dd></div>
         <div><dt>입국 도시·공항</dt><dd>Beijing · Beijing Capital International Airport (PEK)<br/>北京 · 北京首都国际机场</dd></div>
         <div><dt>숙박 기간</dt><dd>2026-10-29 체크인 → 2026-11-01 체크아웃 · 3박</dd></div>
-        <div><dt>도착편 / 귀국편 번호</dt><dd>전자항공권에 적힌 실제 편명을 입력하세요. ‘CA’는 항공사 코드이므로 뒤의 숫자까지 확인해 주세요.</dd></div>
+        <div><dt>도착 항공편 · Arrival flight No.</dt><dd><strong>CA124</strong> · 2026-10-29 인천(ICN) → 베이징 수도(PEK)<br/>입국신고서의 도착 항공편 번호란에 CA124를 입력하세요.</dd></div>
+        <div><dt>귀국 항공편 · Departure flight No.</dt><dd><strong>CA709</strong> · 2026-11-01 베이징 수도(PEK) → 인천(ICN)<br/>출국 예정 항공편을 묻는 항목이 있으면 CA709를 입력하세요.</dd></div>
+        <div><dt>항공사 · Airline</dt><dd>Air China · 중국국제항공(CA)<br/>항공사 코드와 편명 숫자를 나누어 입력하는 화면에서는 CA / 124(도착), CA / 709(귀국)로 입력하세요. 최종 편명은 발권된 전자항공권과 대조해 주세요.</dd></div>
         <div><dt>비자·입국 자격</dt><dd>본인에게 적용되는 실제 입국 자격에 맞게 선택하세요.</dd></div>
       </dl></div>
       <div><h4>숙소 정보는 이렇게 입력하세요</h4><dl className="arrival-fields">{hotelFields.map(([label,value])=><div key={label}><dt>{label}</dt><dd>{value}</dd></div>)}</dl></div>
