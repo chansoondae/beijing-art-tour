@@ -160,3 +160,9 @@ button,a{touch-action:manipulation}
 .arrival-note{margin:22px 0 0}.arrival-sources a{text-decoration:underline;text-underline-offset:3px}
 @media(max-width:900px){.arrival-heading{display:block}.arrival-heading .button{margin-top:22px}.arrival-steps{grid-template-columns:1fr;gap:22px}.arrival-columns{grid-template-columns:1fr;gap:28px}}
 @media(max-width:600px){.arrival-guide{padding:24px 18px}.arrival-heading h3{font-size:24px}.arrival-heading .button{width:100%;justify-content:center}.arrival-columns h4{font-size:19px}}
+
+.emergency-contact{display:flex;align-items:center;justify-content:space-between;gap:24px;padding:32px 36px;margin-top:40px;background:var(--rose);border:1px solid #dfbcc6}
+.emergency-contact h3{font-size:26px;line-height:1.5;letter-spacing:-.8px;margin:12px 0}
+.emergency-contact p{display:flex;flex-wrap:wrap;gap:8px 20px;font-size:20px;line-height:1.8;margin:0}
+.emergency-contact .button{min-height:52px;gap:12px;flex-shrink:0}
+@media(max-width:600px){.emergency-contact{align-items:stretch;flex-direction:column;padding:24px 18px}.emergency-contact .button{justify-content:center}.emergency-contact p{font-size:18px}}
