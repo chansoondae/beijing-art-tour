@@ -143,3 +143,20 @@ button,a{touch-action:manipulation}
  .flight{grid-template-columns:minmax(0,1fr) 48px minmax(0,1fr)}
  .flight strong{font-size:25px}
 }
+
+.arrival-guide{margin-top:44px;padding:36px;background:#fffdf9;border:1px solid var(--line)}
+.arrival-heading{display:flex;justify-content:space-between;align-items:flex-start;gap:24px}
+.arrival-heading h3{font-size:28px;letter-spacing:-1px;line-height:1.5;margin:15px 0 10px}
+.arrival-heading p,.arrival-steps p,.arrival-fields dd,.arrival-note{font-size:16px;line-height:1.9;color:var(--muted)}
+.arrival-heading p{margin:0}.arrival-heading .button{flex-shrink:0;font-size:15px;gap:12px}
+.arrival-steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:30px;padding:28px 0 28px 24px;margin:28px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.arrival-steps li{padding-left:4px}.arrival-steps li::marker{color:var(--pink);font-weight:700}
+.arrival-steps strong{font-size:18px}.arrival-steps p{margin:10px 0 0}
+.arrival-columns{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:40px}
+.arrival-columns h4{font-size:20px;line-height:1.6;margin:0 0 18px}
+.arrival-fields{margin:0}.arrival-fields>div{padding:13px 0;border-top:1px solid var(--line)}
+.arrival-fields dt{font-size:14px;line-height:1.7;font-weight:600}
+.arrival-fields dd{margin:6px 0 0;overflow-wrap:anywhere;user-select:text}
+.arrival-note{margin:22px 0 0}.arrival-sources a{text-decoration:underline;text-underline-offset:3px}
+@media(max-width:900px){.arrival-heading{display:block}.arrival-heading .button{margin-top:22px}.arrival-steps{grid-template-columns:1fr;gap:22px}.arrival-columns{grid-template-columns:1fr;gap:28px}}
+@media(max-width:600px){.arrival-guide{padding:24px 18px}.arrival-heading h3{font-size:24px}.arrival-heading .button{width:100%;justify-content:center}.arrival-columns h4{font-size:19px}}
